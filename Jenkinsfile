@@ -1,4 +1,9 @@
 node {
+  checkout scm
+  stage('Package') {
+      sh 'echo $PATH'
+
+  }
     stage("composer_install") {
         sh 'composer install'
     }
