@@ -11,10 +11,9 @@ node {
 
     stage("php test b") {
         sh 'chmod 777 vendor/bin/behat'
-        sh 'vendor/bin/behat'
     }
 
     stage("buid success!") {
-        sh 'Tewst behat success !'
+        sh 'vendor/bin/behat'
     }
 }
