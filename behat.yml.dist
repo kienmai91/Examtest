@@ -3,6 +3,8 @@ default:
     default:
       path: %paths.base%/features
       contexts: [Behat\MinkExtension\Context\MinkContext]
+      gherkin:
+        cache: ~
   extensions:
     Behat\MinkExtension:
       base_url: http://54.179.168.64:8081/
