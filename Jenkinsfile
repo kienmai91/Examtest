@@ -10,7 +10,8 @@ node {
 
 
     stage("php test b") {
-        sh 'sudo vendor/bin/behat'
+        sh 'chmod 777 /PATH_TO_BEHAT/bin/behat'
+        sh 'vendor/bin/behat'
     }
 
     stage("buid success!") {
