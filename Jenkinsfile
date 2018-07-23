@@ -10,7 +10,7 @@ node {
 
 
     stage("php test b") {
-        sh 'chmod 777 /PATH_TO_BEHAT/bin/behat'
+        sh 'chmod 777 vendor/bin/behat'
         sh 'vendor/bin/behat'
     }
 
