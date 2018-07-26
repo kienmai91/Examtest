@@ -5,5 +5,5 @@ Feature: Search
 
   Scenario: Searching for a page that does exist
     Given I am on "/"
-    Then I should see "1234"
+    Then I should see "124"
 
